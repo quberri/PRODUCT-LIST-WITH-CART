@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    contain: content;
+    font-family: 'Red Hat Text';
+    width: 100%;
+    height: 100%;
+    background-color: hsl(20, 50%, 98%);
+    font-size: 16px;
+}
+
+.container {
+    padding: 10vh 10vw;
+    display: flex;
+}
+
+#dessertsContainer {
+    display: grid;
+    width: 80%;
+    margin-right: 3vw;
+}
+
+#cartOrder {
+    width: 30%;
+    background-color: white;
+    height: 40vh;
+    padding: 1rem;
+    display: grid;
+}
+
+.cartHeader {
+    height: 30%;
+}
+
+
+.cartInfo {
+    height: 70%;
+}
+
+.cartInfo>p {
+    font-size: small;
+}
+
+.cartInfo>img {
+    width: 50%;
+    padding-left: 2rem;
+    margin-bottom: 3rem;
+}
+
+img {
+    width: 100%;
+    border-radius: 4px;
+}
+
+.item {
+    width: 33%;
+    padding: 2% 2%;
+    z-index: 0;
+    position: relative;
+}
+.itemInfo {
+    padding-top: 2rem;
+}
+.itemInfo>h2 {
+    font-size: small;
+}
+.itemInfo > h3 {
+    color: hsl(14, 86%, 42%);
+}
+
+.dessertItems {
+    display: grid;
+}
+
+#rowOne {
+    display: flex;
+}
+
+#rowTwo {
+    display: flex;
+}
+
+#rowThree {
+    display: flex;
+}
+
+.addToCart {
+    text-align: center;
+    border: 1px solid hsl(14, 86%, 42%);
+    width: 60%;
+    border-radius: 10rem;
+    z-index: 1;
+    position: absolute;
+    top: 13rem;
+    left: 20%;
+    font-weight: 700;
+    background-color: white;
+    height: 10%;
+    padding-top: 0.3rem;
+    padding-left: 1rem;
+    display: flex;
+    cursor: pointer;
+}
+.addToCart >  img {
+    width: 15%;
+    margin-right: 5px;
+}
+
+.addToCart:hover {
+    background-color: hsl(13, 31%, 94%);
+    box-shadow: 3px 2px 2px hsl(14, 25%, 72%);
+}
